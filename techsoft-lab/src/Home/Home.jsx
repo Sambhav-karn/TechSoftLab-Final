@@ -7,7 +7,7 @@ import Marketing from '../Image/Marketing.jpg'
 import OurCompany from '../Image/OurCompany.jpg'
 import Icon_1 from '../Image/Icon-1.jpg'
 import Icon_2 from '../Image/Icon-2.jpg'
-import DataMetrics from '../Image/DataMetrics.jpg'
+import DataMetrics from '../Image/DataMetrics.png'
 import customer from '../Image/customer.jpg'
 import TriveniLogo from '../Image/TriveniLogo.png'
 import EnqForm from '../Form/EnqForm'
@@ -55,7 +55,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-lg">
             <a href="#">
               <img src={ITHardWare} className='w-full rounded-t-lg' alt="IT Hardware" />
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-lg">
             <a href="#">
               <img src={DataLake} className='w-full rounded-t-lg' alt="Data Lake" />
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-lg">
             <a href="#">
               <img src={Marketing} className='w-full rounded-t-lg' alt="Marketing" />
@@ -107,7 +107,7 @@ export default function Home() {
               <img src={OurCompany} alt="Our Company" className='w-full max-w-[320px] md:max-w-[380px] lg:w-[420px] rounded' />
             </div>
           </div>
-          
+
           <div className='grid grid-cols-1 md:grid-cols-2 justify-between items-center mt-10 md:mt-16 lg:mt-20 gap-6 md:gap-8 lg:gap-10'>
             <div className='bg-white/70 p-3 flex flex-col md:flex-row justify-between items-center gap-5 shadow-xl rounded-md'>
               <img src={Icon_1} alt="Mission Icon" className='w-16 md:w-auto' />
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className='flex justify-center mt-10 md:mt-16 lg:mt-20 pb-6 md:pb-8 lg:pb-10'>
             <button className="bg-[#0057B8] hover:bg-[#135D60] text-white font-semibold px-8 md:px-12 lg:px-18 py-2 md:py-3 rounded-lg transition duration-300">
               Learn More
@@ -134,8 +134,35 @@ export default function Home() {
       </div>
 
       {/* Case Study Metrics */}
-      <div>
-        <img src={DataMetrics} alt="Data Metrics" className='w-full' />
+      <div
+        className="bg-cover bg-center min-h-fit h-[250px] sm:h-[300px] md:h-[400px] lg:h-[600px] flex flex-col justify-center items-center py-10"
+        style={{
+          backgroundImage: `url(${DataMetrics})`,
+        }}
+      >
+        <div className="flex flex-col justify-center items-center gap-4 sm:gap-5 md:gap-6 lg:gap-8 text-center px-4">
+          <h1 className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+            Case Study Metrics
+          </h1>
+          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl max-w-md">
+            Explore the success of our projects in numbers.
+          </p>
+          <button className="bg-[#0057B8] hover:bg-[#135D60] text-white font-semibold px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-2.5 md:py-3 rounded-lg transition duration-300">
+            View More
+          </button>
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 md:mt-10">
+          <div className="bg-[#21304E] p-4 text-white w-[320px] rounded-lg">
+            <h2 className="font-semibold text-base">Clients Served</h2>
+            <h1 className="font-semibold text-xl">4+</h1>
+            <h2 className="font-semibold text-sm">+20%</h2>
+          </div>
+          <div className="bg-[#21304E] p-4 text-white w-[320px] rounded-lg">
+            <h2 className="font-semibold text-base">Projects Completed</h2>
+            <h1 className="font-semibold text-xl">15+</h1>
+            <h2 className="font-semibold text-sm">+30%</h2>
+          </div>
+        </div>
       </div>
 
       {/* Customer Testimonials */}
@@ -146,7 +173,7 @@ export default function Home() {
         <div className='w-full'>
           <h1 className='text-2xl md:text-3xl lg:text-[40px] mb-3 md:mb-5 font-bold mt-4 md:mt-6 lg:mt-8 text-center lg:text-left'>Customer Testimonials</h1>
           <p className='font-semibold text-center lg:text-left'>See what our clients have to say about us.</p>
-          
+
           <div className='flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10 lg:gap-14 mt-6 md:mt-10 lg:mt-15'>
             <div className='p-4 bg-[#0000000D] rounded-2xl w-full'>
               <div className='flex items-center gap-3'>
@@ -163,7 +190,7 @@ export default function Home() {
               <p className='my-3 pb-3 md:pb-5 text-sm md:text-base'>Having the power to capture user feedback is revolutionary…</p>
             </div>
           </div>
-          
+
           <div className='flex justify-center mt-8 md:mt-12 lg:mt-20 pb-6 md:pb-8 lg:pb-10'>
             <button className="bg-[#0057B8] hover:bg-[#135D60] text-white font-semibold px-8 md:px-12 lg:px-18 py-2 md:py-3 rounded-lg transition duration-300">
               Learn More
