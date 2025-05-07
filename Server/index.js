@@ -18,10 +18,7 @@ mongoose.connect(`${process.env.MONGO_CONNECTION_STRING}/${process.env.DBNAME}`)
         app.listen(`${process.env.PORT}`); //http://localhost:8000
 });
 
-    // mongoose.connect(`mongodb+srv://${process.env.DBCS}@vis.4apfs.mongodb.net/?retryWrites=true&w=majority&appName=vis/${process.env.DBNAME}`)
-    // .then( async() => {
-    //     app.listen(`${process.env.PORT}`); //http://localhost:8000
-    // });
+
  
 // mongoose.connect(`mongodb://127.0.0.1:27017/${process.env.DBNAME}`)
 //     .then(async()=>{
